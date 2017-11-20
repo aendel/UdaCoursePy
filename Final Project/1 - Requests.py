@@ -21,4 +21,13 @@ soup = BeautifulSoup(html, 'html.parser')
 
 print(soup.title)
 
+allTitle = soup.find_all('title')
+print(allTitle)
+
+#list of all of the anchor tags in the first paragraph on a page
+allFirstPa = soup.p.find_all('a')
+
+#select a div element with the id "image-gallery"
+image_gal = soup.find(id="image-gallery")
+
 
