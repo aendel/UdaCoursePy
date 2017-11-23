@@ -1,9 +1,9 @@
 # TODO: Implement the continue_crawl function described above
-def continue_crawl(history,target):
+def continue_crawl(history,target,maxstep=25):
     if history[-1] == target:
         print("Obiettivo trovato! Concludere.")
         return False
-    elif len(history) > 25:
+    elif len(history) > maxstep:
         print("Ricerca troppo lunga. Concludere.")
         return False
         
